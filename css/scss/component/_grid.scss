@@ -12,7 +12,7 @@
     //줄병합
     .rowspan#{$i} { grid-row: span $i;}
 }  
-	
+	 
 
 
 @include media($mobile) {	
