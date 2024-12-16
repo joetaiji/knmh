@@ -1,0 +1,148 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom: 10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li><a href="04_03_04_01_step1.html">학술 프로그램&amp;특강</a></li><li><a href="04_03_04_02.html"  class="active">공모전</a></li><li><a href="04_03_04_03.html" class="active">마음안심버스 체험</a></li></ul></div>');
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<h5 class="s-title-1">개인정보 수집 및 이용</h5>
+<div class="table horizontal">
+    <table>
+        <caption>개인정보 수집 및 이용 - 목적, 내용, 기간, 동의거부 권리</caption>
+        <colgroup>
+            <col class="w25">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row">목적</th>
+                <td>신청 프로그램에 관한 접수관리 업무</td>
+            </tr>
+            <tr>
+                <th scope="row">내용</th>
+                <td>이름, 연락처, 신청사유</td>
+            </tr>
+            <tr>
+                <th scope="row">기간</th>
+                <td>당해년도 공주정신건강학술문화제 행사 종료 후 30일 뒤 파기</td>
+            </tr>
+            <tr>
+                <th scope="row">동의거부 권리 </th>
+                <td>개인정보 수집, 이용에 도의하지 않을 수 있으며, 동의를 거부하실 경우 마음안심버스 체험 참가가 제한됩니다.</td>
+            </tr>            
+        </tbody>
+    </table>    
+</div>
+<div class="custom-input agree-radio">
+    <span class="form-item">
+        <input type="radio" id="agreeYes" name="agreeRadio" value="Y"><label for="agreeYes">미동의</label>
+    </span>
+    <span class="form-item"><input type="radio" id="agreeNo" name="agreeRadio" value="N"><label for="agreeNo">동의</label></span>
+</div>
+
+<h5 class="s-title-1">상담신청</h5>
+<div class="table responsive">
+    <table>
+        <caption>상담신청 - 날짜, 시간, 상담신청, 담당자</caption>
+        <colgroup>
+            <col class="w20">
+            <col>
+            <col class="w15">
+            <col class="w25">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">날짜</th>
+                <th scope="col">시간</th>
+                <th scope="col">상담신청</th>
+                <th scope="col">담당자</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">2024-06-21</td>
+                <td>10:00 ~ 10:20</td>
+                <td>
+                    <span class="custom-input">
+                        <input type="radio" id="consulting01" name="consulting" value="N"><label for="consulting01"><span class="sr-only">상담신청</span></label>
+                    </span>
+                </td>
+                <td>충청권트라우마센터</td>
+            </tr>
+            <tr>
+                <td>10:30 ~ 10:50</td>
+                <td>
+                    <span class="custom-input">
+                        <input type="radio" id="consulting02" name="consulting" value="N"><label for="consulting02"><span class="sr-only">상담신청</span></label>
+                    </span>
+                </td>
+                <td>충청권트라우마센터</td>
+            </tr>
+            <tr>
+                <td>2024-06-22</td>
+                <td>11:00 ~ 11:20</td>
+                <td>
+                    <span class="custom-input">
+                        <input type="radio" id="consulting03" name="consulting" value="N" disabled><label for="consulting03"><span class="sr-only">상담신청 불가능</span></label>
+                    </span>
+                </td>
+                <td>충청권트라우마센터</td>
+            </tr>
+            
+        </tbody>
+    </table>    
+</div>
+
+<h5 class="s-title-1">개인정보</h5>
+<div class="form">
+    <ul class="row-line">
+        
+        <li>
+            <label for="formName" class="label">이름<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="formName">
+            </div>
+        </li>
+        
+       
+        <li>
+            <label for="phoneSelect1" class="label">휴대전화<i class="required" aria-required="true">*</i></label>
+            <div class="labe-cont">
+                <div class="form-group">
+                    <select id="phoneSelect1" name="" class="form-item">
+                        <option value="010" selected>010</option>
+                    </select>
+                    <span class="form-item">-</span>
+                    <input type="text" class="form-item" name="" value="" maxlength="4" size="4" title="전화번호 두번째 자리 입력">
+                    <span class="form-item">-</span>
+                    <input type="text" class="form-item" name="" value="" maxlength="4" size="4" title="전화번호 세번째 자리 입력">
+                </div>
+            </div>
+        </li>
+        <li>
+            <label for="consultingWhy" class="label">신청사유<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <div class="form-row">
+                    <textarea class="form-item" id="consultingWhy" name="" rows="5"></textarea>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="btns ">
+    <button type="button" class="btn">취소</button>
+    <button type="button" class="btn primary">예약신청</button>
+</div>

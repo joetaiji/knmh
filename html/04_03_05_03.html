@@ -1,0 +1,66 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li><a href="">학술 프로그램&amp;특강</a></li><li><a href="">공모전</a></li><li class="active"><a href="">마음안심버스 체험</a></li></ul></div>'); 
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<div class="form">
+    <ul class="row-line">
+        
+        <li>
+            <span class="label">날짜<i class="required" aria-required="true">*</i></span>
+            <div class="label-cont">2024-06-21</div>
+        </li>
+        <li>
+            <span class="label">시간<i class="required" aria-required="true">*</i></span>
+            <div class="label-cont">10:00 ~ 10:20</div>
+        </li>
+        <li>
+            <label for="formName" class="label">이름<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="formName" value="테스트">
+            </div>
+        </li>
+        
+       
+        <li>
+            <label for="phoneSelect1" class="label">휴대전화<i class="required" aria-required="true">*</i></label>
+            <div class="form-group">
+                <select id="phoneSelect1" name="" class="form-item">
+                    <option value="010" selected>010</option>
+                </select>
+                <span class="form-item">-</span>
+                <input type="text" class="form-item" name="" value="1111" maxlength="4" size="4" title="전화번호 두번째 자리 입력">
+                <span class="form-item">-</span>
+                <input type="text" class="form-item" name="" value="1111" maxlength="4" size="4" title="전화번호 세번째 자리 입력">
+            </div>
+        </li>
+        <li>
+            <label for="consultingWhy" class="label">신청사유<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <div class="form-row">
+                    <textarea class="form-item" id="consultingWhy" name="" rows="5">테스트신청입니다.</textarea>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="btns">
+    <button type="button" onclick="" class="btn">이전</button>
+    <button type="button" onclick="" class="btn">수정</button>
+    <button type="button" onclick="" class="btn">접수취소</button>
+</div>

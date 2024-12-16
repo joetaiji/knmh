@@ -1,0 +1,119 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/board.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li class="active"><a href="">전체</a></li><li><a href="">보건의료</a></li><li><a href="">행정관리</a></li></ul></div>');
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<div class="board-info">
+	<form action="">
+		<fieldset class="board-search-wrap form">	
+			<div class="board-search">							
+				<select name="keyField" id="searchSelect" title="검색어 분류를 선택하세요">
+					<option value="">공표업무</option>
+					<option value="">공표내용</option>
+					<option value="">담당부서</option>
+				</select>
+				<input type="text" name="keyWord" value="" title="검색어를 입력하세요" placeholder="검색어를 입력하세요">
+				<button type="submit" onclick="" class="btn search-btn">검색</button>
+			</div>
+		</fieldset>
+	</form>
+	<div class="page-info">
+		<span class="total">
+			총 게시물 <b>3,290</b>
+		</span>
+		<span class="current">페이지
+			<strong>1</strong>
+			/
+			<b>275</b>
+		</span>
+	</div>
+	
+								
+</div>
+<!-- //board-info -->
+<div class="board-list">
+	<table>
+		<caption>사전정보공표 목록 - 공표분류, 공표업무, 공표내용, 공표주기, 공표시기, 공표방법, 담당부서</caption>
+		<colgroup>
+			<col class="w10">
+			<col class="w15">
+			<col>
+			<col class="w8">
+			<col class="w8">
+			<col class="w10">
+			<col class="w15">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">공표분류</th>
+				<th scope="col">공표업무</th>
+				<th scope="col">공표내용</th>
+				<th scope="col">공표주기</th>
+				<th scope="col">공표시기</th>
+				<th scope="col">공표방법</th>
+				<th scope="col">담당부서</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-label="공표분류">보건의료</td>
+				<td data-label="공표업무">검사실적</td>
+				<td data-label="공표내용" class="subject"><a href="">영상의학실 검사실적</a></td>
+				<td data-label="공표주기">매월</td>
+				<td data-label="공표시기">10일</td>
+				<td data-label="공표방법">직접 입력</td>
+				<td data-label="담당부서">영상의학검사실</td>
+			</tr>
+			<tr>
+				<td data-label="공표분류">행정관리</td>
+				<td data-label="공표업무">진료수가 관리(보험급여)</td>
+				<td data-label="공표내용" class="subject"><a href="">초진료, 재진료, 입원의약품 관리료 등</a></td>
+				<td data-label="공표주기">수시</td>
+				<td data-label="공표시기">자료발생 5일이내</td>
+				<td data-label="공표방법">홈페이지</td>
+				<td data-label="담당부서">원무심사팀</td>
+			</tr>
+			<tr>
+				<td data-label="공표분류">행정관리</td>
+				<td data-label="공표업무">수의계약 현황</td>
+				<td data-label="공표내용" class="subject"><a href="">수의계약명, 계약일자, 계약금액, 계약내역, 계약업체, 수의계약 사유, 담당부서</a></td>
+				<td data-label="공표주기">매월</td>
+				<td data-label="공표시기">5일</td>
+				<td data-label="공표방법">홈페이지</td>
+				<td data-label="담당부서">재정운용팀</td>
+			</tr>
+			
+			
+		</tbody>
+	</table>
+</div>
+<!-- //board-list -->
+<div class="pagination">
+	<a href="" class="page-navi prev">이전</a>
+	<div class="page-links">
+		<a href="" class="page-link">1</a>
+		<span class="page-link link-dot"></span>
+		<a href="" class="page-link">5</a>
+		<a href="" class="page-link">6</a>
+		<a href="" class="page-link active">7</a>
+		<a href="" class="page-link">8</a>
+		<a href="" class="page-link">9</a>
+		<span class="page-link link-dot"></span>
+		<a href="" class="page-link">120</a>
+	</div>
+	<a href="" class="page-navi next">다음</a>
+</div>
+<!-- //pagination -->

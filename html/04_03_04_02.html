@@ -1,0 +1,173 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li><a href="04_03_04_01_step1.html">학술 프로그램&amp;특강</a></li><li><a href="04_03_04_02.html"  class="active">공모전</a></li><li><a href="04_03_04_03.html">마음안심버스 체험</a></li></ul></div>');
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<h5 class="s-title-1">개인정보 수집 및 이용</h5>
+<div class="table horizontal">
+    <table>
+        <caption>개인정보 수집 및 이용 - 목적, 내용, 기간, 동의거부 권리, 기타 유의사항</caption>
+        <colgroup>
+            <col class="w25">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row">목적</th>
+                <td>공모 응모와 관련한 업무</td>
+            </tr>
+            <tr>
+                <th scope="row">내용</th>
+                <td>이름, 소속, 성별, 이메일 등</td>
+            </tr>
+            <tr>
+                <th scope="row">기간</th>
+                <td>당해년도 공주정신건강학술문화제 행사 종료 후 파기</td>
+            </tr>
+            <tr>
+                <th scope="row">동의거부 권리 </th>
+                <td>개인정보 수집, 이용에 도의하지 않을 수 있으며, 동의를 거부하실 경우 참가가 제한됩니다.</td>
+            </tr>
+            <tr>
+                <th scope="row">기타 유의사항 </th>
+                <td>
+                    <ul class="list-dot">
+                        <li>제출된 공모전 관련 자료는 반환하지 않으며, 제출작에 대한 저작권(지적재산권)은 국립공주변원에 귀속함</li>
+                        <li>제출된 결과물은 인터넷을 포함한 정보통신망을 통해 공개될 숭 lTdmau, god사장 전시, 결과보고서 등에 사용되고 전시를 위한 과
+                        정에서 편집상의 변경이 발생 할 수 있음</li>
+                        <li>공모와 관련하여 일부 내용이 변경될 수 있으며, 중요 사항에 대하여 사전 공지 예정</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</div>
+<div class="custom-input agree-radio">
+    <span class="form-item">
+        <input type="radio" id="agreeYes" name="agreeRadio" value="Y"><label for="agreeYes">미동의</label>
+    </span>
+    <span class="form-item"><input type="radio" id="agreeNo" name="agreeRadio" value="N"><label for="agreeNo">동의</label></span>
+</div>
+
+<h5 class="s-title-1">공모전</h5>
+<div class="form">
+    <ul class="row-line">
+        <li>
+            <label for="contestSubject" class="label">제목<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="contestSubject">
+            </div>
+        </li>
+        <li>
+            <label for="contestProposal" class="label">제안배경<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <div class="form-row">
+                    <textarea class="form-item" id="contestProposal" name="" rows="5"></textarea>
+                </div>
+            </div>
+        </li>
+        <li>
+            <span class="label">첨부파일<i class="required" aria-required="true">*</i></span>
+            <div class="label-cont">
+                <div class="form-row file-input">
+                    <input type="text" class="file-name form-item" readonly>
+                    <input type="file" id="form1Upload1" class="file-upload">
+                    <label for="form1Upload1" class="file-label btn">찾아보기</label>
+                </div>
+                <div class="helper-box mt3">
+                    <strong class="helper-tit"><i class="ic-warning"></i> 유의사항</strong>
+                    <div class="helper-desc-wrap">
+                        <ul class="list-dot">
+                            <li>디지털 카메라 사진은 반드시 원본 제출</li>
+                            <li>사진과 시(時) 파일을 알집으로 압축하여 제출<br>
+                            예시) 홍길동(소속). Zip</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+       
+    </ul>
+</div>
+
+<h5 class="s-title-1">개인정보</h5>
+<div class="form">
+    <ul class="row-line">
+        <li>
+            <span class="label">구분<i class="required" aria-required="true">*</i></span>
+            <div class="label-cont">
+                <div class="custom-input form-inline">
+                    <span class="form-item">
+                        <input type="radio" id="indivisual" name="userType" value=""><label for="indivisual">개인</label>
+                    </span>
+                    <span class="form-item"><input type="radio" id="organization" name="userType" value=""><label for="organization">단체</label></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <label for="formName" class="label">이름<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="formName">
+            </div>
+        </li>
+        
+       
+        <li>
+            <label for="phoneSelect1" class="label">휴대전화<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <div class="form-group">
+                    <select id="phoneSelect1" name="" class="form-item">
+                        <option value="010" selected>010</option>
+                    </select>
+                    <span class="form-item">-</span>
+                    <input type="text" class="form-item" name="" value="" maxlength="4" size="4" title="전화번호 두번째 자리 입력">
+                    <span class="form-item">-</span>
+                    <input type="text" class="form-item" name="" value="" maxlength="4" size="4" title="전화번호 세번째 자리 입력">
+                </div>
+            </div>
+        </li>
+        <li>
+            <label for="formEmail" class="label">이메일<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <div class="form-group">
+                    <input class="form-item" type="text" name="" id="formEmail" value="">
+                    <span class="form-item"> @ </span>
+                    <input class="form-item domain-input" type="text" name="" value="" title="이메일 주소 직접입력"> 
+                    <select class="form-item domain-select" title="이메일 주소 선택">
+                        <option value="" selected>직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="gmail.com">gmail.com</option>
+                    </select>
+                    
+                </div>
+            </div>
+        </li>
+        <li>
+            <label for="belongInt" class="label">소속<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="belongInt">
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="btns ">
+    <button type="button" class="btn">취소</button>
+    <button type="button" class="btn primary">접수</button>
+</div>

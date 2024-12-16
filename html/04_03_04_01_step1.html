@@ -1,0 +1,179 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li class="active"><a href="04_03_04_01_step1.html">학술 프로그램&amp;특강</a></li><li><a href="04_03_04_02.html">공모전</a></li><li><a href="04_03_04_03.html">마음안심버스 체험</a></li></ul></div>');
+
+        $('[type=checkbox]').on('click', function(){
+            var name = $(this).attr('name');
+            var checkedName = $('[type=checkbox][name="' + name + '"]:checked').length;
+            
+            if(checkedName > 1) { 
+                alert("이미 선택된 항목과 중복되는 항목입니다. \n\n 중복항목 : [대국민특강]진정한 행복의 7가지 조건 \n 시간대 : 10:00 ~ 12:00");
+                $(this).prop('checked', false);
+            }       
+        }) 
+
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+
+<div class="box border-top flex-box">
+    <img src="../img/contents/picto_desc.png" alt="">
+    <div class="cont">
+        <h4 class="title">학술프로그램 안내</h4>
+        <ul class="list-dot">
+            <li>공주정신건강학술문화제에서는 정신건강 전문가들을 위한 심포지엄, 워크숍, 대국민특강 등 다양한 프로그램이 준비 되어있습니다.</li>
+            <li>신청시 주제, 강사, 시간과 장소를 꼭 확인하시고 신청해 주시기바랍니다.
+                <p class="note"><i class="ic-warning text-point"></i> 접수 및 변경 후 접수확인을 통해 신청내역을 꼭 확인바랍니다.</p></li>
+            
+        </ul>
+    </div>
+</div>
+<h5 class="s-title-1"> 2024.07.19(금)</h5>
+<div class="table responsive">
+    <table>
+        <caption>학술프로그램(2024.07.19(금)) - 시간, 구분, 교육신청(온라인,오프라인), 교육명, 발표자, 장소</caption>
+        <colgroup>
+            <col class="w13">
+            <col class="w10">
+            <col class="w8">
+            <col class="w8">
+            <col>
+            <col class="w15">
+            <col class="w18">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">시간</th>
+                <th scope="col" rowspan="2">구분</th>
+                <th scope="col" colspan="2">교육신청</th>
+                <th scope="col" rowspan="2">교육명</th>
+                <th scope="col" rowspan="2">발표자</th>
+                <th scope="col" rowspan="2">장소</th>
+            </tr>
+            <tr>
+                <th scope="col">온라인</th>
+                <th scope="col">오프라인</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">10:00 ~ 12:00</td>
+                <td>특강</td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240719-1" id="inputCheck240719-1-1"><label for="inputCheck240719-1-1"><span class="sr-only">온라인</span></label></span></td>
+                <td></td>
+                <td class="text-left">[대국민특강] 진정한 행복의 7가지 조건</td>
+                <td>홍길동</td>
+                <td>(고마)1층 컨벤션 홀</td>
+            </tr>
+            <tr>
+                <td>힐링로드</td>
+                <td></td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240719-1" id="inputCheck240719-1-2"><label for="inputCheck240719-1-2"><span class="sr-only">오프라인</span></label></span></td>
+                <td class="text-left">[문화관 힐링로드 1차] 공주 역사의 시간 여행</td>
+                <td>고인지, 하남순</td>
+                <td>Zoom 화상회의 / (고마)1층 컨벤션 홀</td>
+            </tr>
+            <tr>
+                <td>워크숍</td>
+                <td></td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240719-1" id="inputCheck240719-1-3" disabled><label for="inputCheck240719-1-3"><span class="sr-only">오프라인</span></label></span></td>
+                <td class="text-left">[워크숍 1] 당사자와 가족의 회복 경험</td>
+                <td>이미리, 유유현</td>
+                <td>(고마)3층 세미나실 1</td>
+            </tr>
+            <tr>
+                <td>13:00 ~ 14:30</td>
+                <td>힐링로드</td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240719-2" id="inputCheck240719-2-1"><label for="inputCheck240719-2-1"><span class="sr-only">온라인</span></label></span></td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240719-2" id="inputCheck240719-2-2"><label for="inputCheck240719-2-2"><span class="sr-only">오프라인</span></label></span></td>
+                <td class="text-left">[개막식] 제11회 공주정신건강학술문화제 개막식</td>
+                <td>박남구, 이민지, 하남수</td>
+                <td>(고마)3층 세미나실 1</td>
+            </tr>
+            
+        </tbody>
+    </table>    
+</div>
+
+<h5 class="s-title-1"> 2024.07.20(토)</h5>
+<div class="table responsive">
+    <table>
+        <caption>학술프로그램(2024.07.20(토)) - 시간, 구분, 교육신청(온라인,오프라인), 교육명, 발표자, 장소</caption>
+        <colgroup>
+            <col class="w13">
+            <col class="w10">
+            <col class="w8">
+            <col class="w8">
+            <col>
+            <col class="w15">
+            <col class="w18">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">시간</th>
+                <th scope="col" rowspan="2">구분</th>
+                <th scope="col" colspan="2">교육신청</th>
+                <th scope="col" rowspan="2">교육명</th>
+                <th scope="col" rowspan="2">발표자</th>
+                <th scope="col" rowspan="2">장소</th>
+            </tr>
+            <tr>
+                <th scope="col">온라인</th>
+                <th scope="col">오프라인</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">10:00 ~ 12:00</td>
+                <td>특강</td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240720-1" id="inputCheck240720-1-1"><label for="inputCheck240720-1-1"><span class="sr-only">온라인</span></label></span></td>
+                <td></td>
+                <td class="text-left">[대국민특강] 진정한 행복의 7가지 조건</td>
+                <td>홍길동</td>
+                <td>(고마)1층 컨벤션 홀</td>
+            </tr>
+            <tr>
+                <td>힐링로드</td>
+                <td></td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240720-1" id="inputCheck240720-1-2"><label for="inputCheck240720-1-2"><span class="sr-only">오프라인</span></label></span></td>
+                <td class="text-left">[문화관 힐링로드 1차] 공주 역사의 시간 여행</td>
+                <td>고인지, 하남순</td>
+                <td>Zoom 화상회의 / (고마)1층 컨벤션 홀</td>
+            </tr>
+            <tr>
+                <td>힐링로드</td>
+                <td></td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240720-1" id="inputCheck240720-1-3"><label for="inputCheck240720-1-3"><span class="sr-only">오프라인</span></label></span></td>
+                <td class="text-left">[워크숍 1] 당사자와 가족의 회복 경험</td>
+                <td>이미리, 유유현</td>
+                <td>(고마)3층 세미나실 1</td>
+            </tr>
+            <tr>
+                <td>13:00 ~ 14:30</td>
+                <td>힐링로드</td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240720-2" id="inputCheck240720-2-1"><label for="inputCheck240720-2-1"><span class="sr-only">온라인</span></label></span></td>
+                <td><span class="custom-input"><input type="checkbox" name="eduTime240720-2" id="inputCheck240720-2-2"><label for="inputCheck240720-2-2"><span class="sr-only">오프라인</span></label></span></td>
+                <td class="text-left">[개막식] 제11회 공주정신건강학술문화제 개막식</td>
+                <td>박남구, 이민지, 하남수</td>
+                <td>(고마)3층 세미나실 1</td>
+            </tr>
+            
+        </tbody>
+    </table>    
+</div>
+<div class="btns">
+    <button type="button" onclick="location.href='04_03_04_01_step2.html'" class="btn primary mla">다음단계</button>
+</div>
+

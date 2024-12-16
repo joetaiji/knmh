@@ -1,0 +1,192 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<h4 class="s-title-1">외래</h4>
+<h5 class="s-title-2">건강보험 진료비</h5>
+<div class="table responsive in-border">
+  <table>
+    <caption>
+      <span class="hdn">건강보험 진료비 - 초진, 재진일 때 건강보험의 보험과 비보험 진료비입니다.</span>
+      </caption>
+    <colgroup>        
+      <col span="3">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">구분</th>
+      <th scope="col">보험</th>
+      <th scope="col">비보험</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>초진</td>
+      <td>6,450원</td>
+      <td>16,140원</td>
+    </tr>
+    <tr>
+      <td>재진</td>
+      <td>4,680원</td>
+      <td>11,700원</td>
+    </tr>
+    <tr>
+      <td>개인정신치료</td>
+      <td>2,700원 부터</td>
+      <td>13,500원 부터</td>
+    </tr>
+  </tbody>
+  </table>  
+</div>
+<div class="note mt1"><i class="ri-information-2-line text-point" aria-hidden="true"></i> 본인부담금: 총 진료비의 40%</div>
+
+<h5 class="s-title-2">의료급여 진료비</h5>
+<div class="table responsive in-border">
+  <table>
+    <caption>
+      <span class="hdn">의료급여 진료비 - 의료급여의 구분, 진료, 비고 내용이 보여집니다</span>
+      </caption>
+    <colgroup>        
+      <col class="w10">
+      <col span="3">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">구분</th>
+      <th colspan="2" scope="col">진료</th>
+      <th scope="col">비고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">1종</td>
+      <td>약처방이 있을 경우</td>
+      <td>약처방이 없을 경우</td>
+      <td rowspan="2">건강생활유지비 차감</td>
+    </tr>
+    <tr>
+      <td>2,000원</td>
+      <td>1,500원</td>
+    </tr>
+    <tr>
+      <td>2종</td>
+      <td colspan="3">총 진료비의 10%</td>
+    </tr>
+  </tbody>
+  </table>  
+</div>
+<div class="helper-box">
+  <ul class="list-dot">
+    <li>의료급여 2종이면서 장애인카드 소지자일 경우 본인부담금 무료</li>
+    <li>비급여 처방 시 본인부담금 발생(비급여수가 안내 참고)</li>
+    <li>항정신병 장기지속형주사제 본인부담금 5%(의료급여법 시행령 참고)</li>
+  </ul>
+</div>
+
+<h4 class="s-title-1">입원</h4>
+<div class="table responsive in-border">
+  <div class="unit">(단위 : 원)</div>
+  <table>
+    <caption>
+      <span class="hdn">입원진료비 - 입원진료비에 대한 보험 유형별(건강보험:건강보험,차상위
+      1종, 차상위 2종/의료급여:1종,2종/낮병동/일반)과 장애인 카드(복지카드) 사용유무와 본인 부담금 및 비고에
+      대한 내용이 보여집니다.</span>
+      </caption>
+    <colgroup>        
+      <col class="w10">
+      <col class="w10">
+      <col class="w10">
+      <col span="2">
+  </colgroup>
+  <thead>
+    <tr>
+      <th colspan="2" scope="col">보험 유형</th>
+      <th scope="col">장애인 카드<br>
+        (복지카드)</th>
+      <th scope="col">본인 부담금</th>
+      <th scope="col">비 고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">건강보험</td>
+      <td>건강보험</td>
+      <td></td>
+      <td>1,000,000원부터<br>
+        (환자의 상태에 따라 추가비용 발생)</td>
+      <td class="ta_l">총 진료비의20%+식대(기본식대+가산식대)50%<br>
+        ○ 산정특례(V161)<br>
+        - 총 진료비의10%+식대(기본식대+가산식대)50%</td>
+    </tr>
+    <tr>
+      <td>차상위1종</td>
+      <td></td>
+      <td>300,000원부터<br>
+        (환자의 상태에 따라 추가비용 발생)</td>
+      <td class="ta_l">식대(기본식대) 20%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">차상위2종</td>
+      <td>유</td>
+      <td>300,000원부터<br>
+        (환자의 상태에 따라 추가비용 발생)</td>
+      <td class="ta_l">식대(기본식대) 20%</td>
+    </tr>
+    <tr>
+      <td>무</td>
+      <td>600,000원부터</td>
+      <td class="ta_l">총진료비의10%+
+        식대(기본식대+가산식대20%)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">의료급여</td>
+      <td>1종</td>
+      <td></td>
+      <td>80,000원부터</td>
+      <td class="ta_l">식대20%<br>
+        * 비급여 의약품 사용 및 검사를 받으실 경우 비용이 추가 발생할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2종</td>
+      <td>유</td>
+      <td>80,000원부터</td>
+      <td class="ta_l">식대20%</td>
+    </tr>
+    <tr>
+      <td>무</td>
+      <td>100,000원부터</td>
+      <td class="ta_l">총 진료비의 10%<br>
+        식대20%</td>
+    </tr>
+    <tr>
+      <td colspan="2">낮병동</td>
+      <td></td>
+      <td>보험: 총진료비의 20%<br>
+        일반: 총진료비의 100%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">일반</td>
+      <td></td>
+      <td>320만원부터</td>
+      <td></td>
+    </tr>
+  </tbody>
+  </table>  
+</div>
+<div class="helper-box">
+  <ul class="list-dot">
+    <li>입원비는 환자의 진료행위에 의하여 월 평균 예상금액보다 많거나 적게 나올 수 있습니다.</li>
+    <li>간식비는 별도입니다.</li>
+  </ul>
+</div>

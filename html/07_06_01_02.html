@@ -1,0 +1,43 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/board.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li><a href="06_06_01.html">보건복지부</a></li><li class="active"><a href="06_06_02.html">소속기관</a></li><li><a href="06_06_03.html">산하기관</a></li></ul></div>');
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+<div class="box border-top flex-box">
+	<img src="../img/contents/picto_desc.png" alt="">
+	<div class="cont">
+		<p>보건복지부 및 소속기관의 정책, 법령, 재정, 감사, 연구정보 등 다양한 자료를 파일, 이미지, 동영상 등 여러 형태로 제공해 드립니다.</p>
+	</div>
+</div>
+<div class="depth5 tabs">
+	<ul>
+		<li class="active"><a href="#">국립정신건강센터<span class="sr-only">선택됨</span></a></li>
+		<li><a href="#">국립나주병원</a></li>
+		<li><a href="#">국립부곡병원</a></li>
+		<li><a href="#">국립춘천병원</a></li>
+		<li><a href="#">국립공주병원</a></li>
+		<li><a href="#">국립소록도병원</a></li>
+		<li><a href="#">국립재활원</a></li>
+		<li><a href="#">오송생명과학단지지원센터</a></li>
+		<li><a href="#">국립망향의동산관리원</a></li>
+	</ul>
+</div>
+<form name="ifrm" method="GET" target="frm" action="https://data.go.kr/tcs/dss/selectDataSetList.do">
+	<input type="hidden" name="" value="">
+	<input type="hidden" name="" value="">
+	<input type="hidden" name="" value="">
+</form>
+<iframe name="frm" src="https://data.go.kr/tcs/dss/selectDataSetList.do" title="보건복지 공공데이터-보건복지부"></iframe>
+<script>document.ifrm.submit();</script>

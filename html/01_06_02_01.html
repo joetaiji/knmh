@@ -1,0 +1,804 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li class="active"><a href="">행위</a></li><li><a href="">치과</a></li><li><a href="">제증명수수료</a></li></ul></div>');
+	})
+</script>
+
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<div class="table responsive in-border">
+  <table>
+    <caption class="hdn">비급여수가 항목 및 금액-분류,항목(코드,명칭),가격정보(단위:원)(구분,비용,최저비용,최고비용,치료재료대포함여부,약제비포함여부),특이사항,최종변경일 안내</caption>
+    <colgroup>        
+      <col class="w5">
+      <col class="w10">
+      <col>
+      <col class="w5">
+      <col class="w10">
+      <col class="w10">
+      <col class="w10">
+      <col class="w5">
+      <col class="w5">
+      <col class="w10">
+      <col class="w10">
+  </colgroup>
+  <thead>
+		<tr>
+			<th scope="col" rowspan="2">분류</th>
+			<th scope="col" colspan="2">항목</th>
+			<th scope="col" colspan="6">가격정보(단위:원)</th>
+			<th scope="col" rowspan="2">특이사항</th>
+			<th scope="col" rowspan="2">최종<br>변경일</th>
+		  </tr>
+		  <tr>
+			<th scope="col">코드</th>
+			<th scope="col">명칭</th>
+			<th scope="col">구분</th>
+			<th scope="col">비용</th>
+			<th scope="col">최저비용</th>
+			<th scope="col">최고비용</th>
+			<th scope="col">치료재료대 포함여부</th>
+			<th scope="col">약제비 포함여부</th>
+		  </tr>
+		</thead>
+    <tbody>
+		  <tr>
+			<th scope="row">이화학치료</th>
+			<td>TMS</td>
+			<td>TMS(경두개 자기자극치료술)</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row">이화학요법료</th>
+			<td>CCRT</td>
+			<td>전산화 인지재활치료(주의.기억력)</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row" rowspan="18">정신요법료</th>
+			<td>PANIC</td>
+			<td>공황장애집단 인지행동치료</td>
+			<td></td>
+			<td>50,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>RI-CBT</td>
+			<td>인터넷중독 인지행동치료</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>RI-GT</td>
+			<td>인터넷중독집단치료</td>
+			<td></td>
+			<td>15,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>NN302</td>
+			<td>언어치료</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>NN301</td>
+			<td>소아·청소년행동요법</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>SOC</td>
+			<td>사회성 기술훈련(상)</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>NN040P4</td>
+			<td>음악치료</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>NN040P1</td>
+			<td>미술치료</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DEP</td>
+			<td>우울,자살예방 프로그램</td>
+			<td></td>
+			<td>15,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>VR-CBT1</td>
+			<td>가상현실인지행동치료(외래)</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>EMDRP30</td>
+			<td>안구운동민감소실 및 재처리요법</td>
+			<td></td>
+			<td>50,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>EMDRP60</td>
+			<td>안구운동민감소실 및 재처리요법</td>
+			<td></td>
+			<td>100,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>EMDRD601</td>
+			<td>안구운동민감소실 및 재처리요법</td>
+			<td></td>
+			<td>100,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>EMDRD602</td>
+			<td>안구운동민감소실 및 재처리요법</td>
+			<td></td>
+			<td>150,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>EMDRD901</td>
+			<td>안구운동민감소실 및 재처리요법</td>
+			<td></td>
+			<td>150,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>EMDRD902</td>
+			<td>안구운동민감소실 및 재처리요법</td>
+			<td></td>
+			<td>200,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>NZ008</td>
+			<td>뉴로피드백(통상진료)</td>
+			<td></td>
+			<td>30,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2024.05.03</td>
+		  </tr>
+		  <tr>
+			<td>NZ009</td>
+			<td>바이오피드백(통상진료)</td>
+			<td></td>
+			<td>30,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2024.05.03</td>
+		  </tr>
+		  <tr>
+			<th scope="row">검사료</th>
+			<td>INBODY</td>
+			<td>체성분분석</td>
+			<td></td>
+			<td>5,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row" rowspan="21"> 전산화
+			  신경인지
+			  기능검사(C<br>N<br>T) </th>
+			<td>NN303</td>
+			<td>언어평가</td>
+			<td></td>
+			<td> 36,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ033</td>
+			<td>언어기억검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="19">전산화 인지검사</td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ031-2</td>
+			<td>시각기억검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ022</td>
+			<td>언어지속검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ021</td>
+			<td>시각지속검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ060</td>
+			<td>단어색채검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ024</td>
+			<td>선로잇기검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ059</td>
+			<td>카드분류검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ056</td>
+			<td>개념형성검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ031-1</td>
+			<td>숫자따라하기</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ031</td>
+			<td>시각단기기억검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ012</td>
+			<td>조건언어지속검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ021</td>
+			<td>시각지속검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ011</td>
+			<td>조건시각지속검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ072</td>
+			<td>크로스오버테스트</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ053</td>
+			<td>Modality Shift Test</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ060</td>
+			<td>단어색채검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ048</td>
+			<td>수지력검사</td>
+			<td></td>
+			<td> 10,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ058-1</td>
+			<td>색채도형성검사</td>
+			<td></td>
+			<td> 25,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FZ058</td>
+			<td>지능검사</td>
+			<td></td>
+			<td> 25,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>CRESD-NP</td>
+			<td>CERAD(치매척도검사)</td>
+			<td></td>
+			<td>100,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>　</td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row" rowspan="2">주의력검사</th>
+			<td>CAT</td>
+			<td>종합주의력검사(CAT)</td>
+			<td></td>
+			<td> 40,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>　</td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>NIVA</td>
+			<td>주의력검사(시,청각)</td>
+			<td></td>
+			<td>32,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row" rowspan="2">스트레스진단검사</th>
+			<td>FY894</td>
+			<td>스트레스진단검사</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>FY739A01</td>
+			<td>통합스트레스검사</td>
+			<td></td>
+			<td>15,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row" rowspan="6">심리검사</th>
+			<td>KIMS</td>
+			<td>전두엽관리기능 신경심리검사</td>
+			<td></td>
+			<td>50,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>ASDS</td>
+			<td>아스퍼거증후군진단척도</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="5">아동청소년</td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>K-LEDS</td>
+			<td>한국판 학습장애 평가척도</td>
+			<td></td>
+			<td>10,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>READ</td>
+			<td>기초학습기능수행평가체계</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>MATH</td>
+			<td>기초학습기능수행평가체계</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>WE</td>
+			<td>기초학습기능수행평가체계</td>
+			<td></td>
+			<td>20,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<th scope="row" rowspan="11">처치및수술
+			  (치과)</th>
+			<td>DS003</td>
+			<td>주조금관</td>
+			<td></td>
+			<td>340,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS004</td>
+			<td>도재금관</td>
+			<td></td>
+			<td>300,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS006</td>
+			<td>편악국소의치</td>
+			<td></td>
+			<td>600,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS008</td>
+			<td>레진의치</td>
+			<td></td>
+			<td>1,000,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS009</td>
+			<td>메탈의치</td>
+			<td></td>
+			<td>1,200,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS005</td>
+			<td>메탈관</td>
+			<td></td>
+			<td> 240,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS011</td>
+			<td>의치의장</td>
+			<td></td>
+			<td> 200,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS002</td>
+			<td>금인레이</td>
+			<td></td>
+			<td> 200,000 </td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>U2233</td>
+			<td>스케일링(전악)</td>
+			<td></td>
+			<td></td>
+			<td>30,000</td>
+			<td>50,000</td>
+			<td></td>
+			<td></td>
+			<td>급여기준 외 실시한 경우 비급여</td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS015</td>
+			<td>광중합레진</td>
+			<td></td>
+			<td> 50,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>DS007</td>
+			<td>의치수리(치아1개당)</td>
+			<td></td>
+			<td> 50,000</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		</tbody>
+  </table>  
+</div>

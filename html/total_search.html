@@ -1,0 +1,284 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {
+        width: 128rem;
+        max-width: calc(100% - 2rem);
+        margin: 5rem auto;
+        padding-bottom: 10rem;
+    }
+</style>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+<!-- 검색 상단 -->
+<div class="total-search-top-box">
+    <div class="sch-form-wrap vert">
+        <div class="sch-input">
+            <input type="text" class="form-control xlg" placeholder="검색어 입력" value="퇴직" title="검색어 입력">
+            <button type="button" class="btn btn-ico ico-sch">
+                <span class="sr-only">검색</span>
+            </button>
+        </div>
+        <div class="sch-etc">
+            <button type="button" class="btn btn-txt ico-sch1 ico-before">고급검색</button>
+
+            <div class="sch-detail">
+                <form class="form">
+                    <ul class="row-line">
+                        <li>
+                            <span class="label">기간설정</span>
+                            <div class="label-cont form-inline">
+                                <div class="form-group">
+                                    <span class="btn-label"><input type="radio" id="frmTerm1" name="formTerm"><label for="frmTerm1" class="btn sm">일주일</label></span>
+                                    <span class="btn-label"><input type="radio" id="frmTerm2" name="formTerm"><label for="frmTerm2" class="btn sm">최근1개월</label></span>
+                                    <span class="btn-label"><input type="radio" id="frmTerm3" name="formTerm"><label for="frmTerm3"  class="btn sm">최근3개월</label></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" title="시작일"> - <input type="date" id="frmEndDate" title="종료일">
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="reset" class="btn btn-ico ico-reset">초기화</button>
+                                <button type="submit" class="btn md primary search-btn">적용하기</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                </form>
+                <button type="button" class="btn btn-close ico-arr-down">고급검색 <span class="sr-only">닫기</span></button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- //검색 상단 -->
+
+<!-- 검색 결과 -->
+<div class="total-search-cont">
+    <!-- tab list -->
+    <div class="tabs">
+        <ul class="tab">
+            <li class="active">
+                <button type="button" class="btn-tab">전체(1,234)</button>
+            </li>
+            <li>
+                <button type="button" class="btn-tab">메뉴(12)</button>
+            </li>
+            <li>
+                <button type="button" class="btn-tab">뉴스･소식(234)</button>
+            </li>
+            <li>
+                <button type="button" class="btn-tab">정책(345)</button>
+            </li>
+            <li>
+                <button type="button" class="btn-tab">자주 묻는 질문(55)</button>
+            </li>
+            <li>
+                <button type="button" class="btn-tab">자료(9)</button>
+            </li>
+            <li>
+                <button type="button" class="btn-tab">직원(0)</button>
+            </li>
+        </ul>
+    </div>
+    <!-- //tab list -->
+
+    <!-- tab contents -->
+    <div class="tab-conts-wrap">
+        <section class="tab-conts active">
+            <h3 class="sr-only">전체</h3>
+
+            <!-- 리스트 상단 -->
+            <div class="search-list-top">
+                <div class="sch-info">
+                    적용된 검색어 ‘<span class="keyword">퇴직</span>’ / 검색 결과 <span class="keyword">22,459</span>개
+                </div>
+
+                <ul class="sch-sort">
+                    <li class="li1">
+                        <strong class="sort-label"><label for="search_result_count1">목록 표시 개수</label></strong>
+                        <select class="sort-select" id="search_result_count1">
+                            <option>10개</option>
+                            <option>9개</option>
+                        </select>
+                    </li>
+                    <li class="li2">
+                        <strong class="sort-label"><label for="sort1">정렬기준</label></strong>
+                        <div class="w-sort-btn">
+                            <button type="button" class="active">관련도순</button>
+                            <button type="button">최신순</button>
+                            <button type="button">인기순</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- //리스트 상단 -->
+
+            <!-- 리스트 -->
+            <h3 class="s-title-1">메뉴(12)</h3>
+            <ul class="total-search-list no-list">
+                <li class="li">
+                    <p class="tit">
+                        <strong>검색어 "<span class="keyword">퇴직</span>"에 대한 검색 결과가 없습니다.</strong>
+                    </p>
+                    <ul class="list-dot">
+                        <li>철자나 맞춤법 오류가 있는지 확인해 주세요.</li>
+                        <li>여러 단어로 나누거나 다른 검색어로 검색해 주세요.</li>
+                        <li>보다 일반적인 단어로 검색해 보세요.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 class="s-title-1">메뉴(12)</h3>
+            <ul class="total-search-list">
+                <li class="li">
+                    <p class="info-top">
+                        <span class="i-date">2023.11.01</span>
+                    </p>
+                    <div class="info-body">
+                        <a href="#">
+                            <div class="in">
+                                <div class="text">
+                                    <p class="tit">나의 <span class="keyword">퇴직</span>금 계산해 보기</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="info-btm">
+                        <div class="i-cate">
+                            <a href="#">
+                                <span class="span">퇴직</span>
+                                <span class="span">퇴직금계산</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="btn-area">
+                                <button type="button" class="btn btn-txt ico-more">자세히보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="li">
+                    <p class="info-top">
+                        <span class="i-date">2023.12.01</span>
+                    </p>
+                    <div class="info-body">
+                        <a href="#">
+                            <div class="in">
+                                <div class="text">
+                                    <p class="tit"><span class="keyword">퇴직</span>연금</p>                                   
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="info-btm">
+                        <div class="i-cate">
+                            <a href="#">
+                                <span class="span">정책자료</span> <span class="span">대상자별ㆍ분야별정책</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="btn-area">
+                                <button type="button" class="btn btn-txt ico-down">HWP 다운로드</button>
+                                <button type="button" class="btn btn-txt ico-more">자세히보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- //리스트 -->
+            <button class="btn ico-arr lg btn-more">더보기</button>
+
+            <h3 class="s-title-1">뉴스·소식(234)</h3>
+            <ul class="total-search-list">
+                <li class="li">
+                    <p class="info-top">
+                        <span class="i-date">2023.11.01</span>
+                    </p>
+                    <div class="info-body">
+                        <a href="#">
+                            <div class="in">
+                                <div class="text">
+                                    <p class="tit">나의 <span class="keyword">퇴직</span>금 계산해 보기</p>
+                                    <p class="txt"><span class="keyword">퇴직</span>급여는 근로자가 상당한 기간을 근속하고
+                                        <span class="keyword">퇴직</span>할 경우 지급되는 연금 또는 일시금입니다. 나의 <span
+                                            class="keyword">퇴직</span>금 계산해 보기로 본인의 <span class="keyword">퇴직</span>급여를 미리
+                                        계산해 볼 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="info-btm">
+                        <div class="i-cate">
+                            <a href="#">
+                                <span class="span">뉴스・소식</span>
+                                <span class="span">뉴스소식</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="btn-area">
+                                <button type="button" class="btn btn-txt ico-more">자세히보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="li">
+                    <p class="info-top">
+                        <span class="i-date">2023.12.01</span>
+                    </p>
+                    <div class="info-body">
+                        <a href="#">
+                            <div class="in">
+                                <div class="text">
+                                    <p class="tit"><span class="keyword">퇴직</span>연금복지과, 근로자<span
+                                            class="keyword">퇴직</span>급여 보장법 시행령 일부개정안 설명자료.hwp</p>
+                                    <p class="txt">
+                                        '22.4.14. 시행된 근로자<span class="keyword">퇴직</span>급여 보장법 설명자료입니다.
+                                        업무에 참고하시기 바랍니다. &lt;1&gt; 중소기업<span class="keyword">퇴직</span>연금기금제도
+                                        &lt;2&gt; 300인 이상 확정급여형(DB형) <span class="keyword">퇴직</span>연금
+                                        운영개편 &lt;2&gt; 확정급여형(DB) <span class="keyword">퇴직</span>연금
+                                        최소적립금 미적립시 과태료 부과 &lt;4&gt; <span class="keyword">퇴직</span>금 IRP 지급 의무화
+                                        &lt;5&gt;
+                                        <span class="keyword">퇴직</span>연금 가입자 교육 제도
+                                        개편
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="info-btm">
+                        <div class="i-cate">
+                            <a href="#">
+                                <span class="span">정책자료</span> <span class="span">대상자별ㆍ분야별정책</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="btn-area">
+                                <button type="button" class="btn btn-txt ico-down">HWP 다운로드</button>
+                                <button type="button" class="btn btn-txt ico-more">자세히보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- //리스트 -->
+
+
+        </section>
+
+    </div>
+    <!-- //tab contents -->
+</div>
+<!-- //검색 결과 -->

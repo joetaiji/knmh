@@ -1,0 +1,121 @@
+<!-- 콘텐츠 등록시 넣지 마세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../css/pattern.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/func.js"></script>
+<script src="../js/sub.js"></script>
+<style>
+    body {width: 97rem; max-width:calc(100% - 2rem); margin:5rem auto; padding-bottom:10rem;}
+</style>
+<script>
+	$(function(){
+		$('body').prepend('<div class="depth4 tabs"><ul><li><a href="">학술 프로그램&amp;특강</a></li><li class="active"><a href="">공모전</a></li><li><a href="">마음안심버스 체험</a></li></ul></div>');  
+	})
+</script>
+<!-- //콘텐츠 등록시 넣지 마세요 -->
+
+
+<h5 class="s-title-1">공모전</h5>
+<div class="form">
+    <ul class="row-line">
+        <li>
+            <label for="contestSubject" class="label">제목<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="contestSubject" value="공모전 제목">
+            </div>
+        </li>
+        <li>
+            <label for="contestProposal" class="label">제안배경<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <div class="form-row">
+                    <textarea class="form-item" id="contestProposal" name="" rows="5">공모전 제안배경 내용</textarea>
+                </div>
+            </div>
+        </li>
+        <li>
+            <span class="label">첨부파일<i class="required" aria-required="true">*</i></span>
+            <div class="label-cont">
+                <ul class="file-list">
+                    <li>
+                        <a href="" class="file-down">
+                            <span class="text">공모전 제안 상세 내용.pdf</span>
+                            <span class="file-size">(65KB)</span>
+                        </a>
+                        <span class="link">
+                            <button class="btn xsm file-delete" href="">삭제하기<i class="ri-close-fill" aria-hidden="true"></i></button>
+                        </span>
+                    </li>
+                </ul>
+                
+               <!--  <div class="form-row file-input">
+                    <input type="text" class="file-name form-item" readonly>
+                    <input type="file" id="form1Upload1" class="file-upload">
+                    <label for="form1Upload1" class="file-label btn">찾아보기</label>
+                </div> -->
+            </div>
+        </li>
+   
+        <li>
+            <span class="label">구분<i class="required" aria-required="true">*</i></span>
+            <div class="label-cont">
+                <div class="custom-input form-inline">
+                    <span class="form-item">
+                        <input type="radio" id="indivisual" name="userType" value="" checked><label for="indivisual">개인</label>
+                    </span>
+                    <span class="form-item"><input type="radio" id="organization" name="userType" value=""><label for="organization">단체</label></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <label for="formName" class="label">이름<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="formName" value="홍길동">
+            </div>
+        </li>
+        
+       
+        <li>
+            <label for="phoneSelect1" class="label">휴대전화<i class="required" aria-required="true">*</i></label>
+            <div class="form-group">
+                <select id="phoneSelect1" name="" class="form-item">
+                    <option value="010" selected>010</option>
+                </select>
+                <span class="form-item">-</span>
+                <input type="text" class="form-item" name="" value="1234" maxlength="4" size="4" title="전화번호 두번째 자리 입력">
+                <span class="form-item">-</span>
+                <input type="text" class="form-item" name="" value="6789" maxlength="4" size="4" title="전화번호 세번째 자리 입력">
+            </div>
+        </li>
+        <li>
+            <label for="formEmail" class="label">이메일<i class="required" aria-required="true">*</i></label>
+            <div class="form-group">
+                <input class="form-item" type="text" name="" id="formEmail" value="asdf">
+                <span class="form-item"> @ </span>
+                <input class="form-item domain-input" type="text" name="" value="naver.com" title="이메일 주소 직접입력"> 
+                <select class="form-item domain-select" title="이메일 주소 선택">
+                    <option value="">직접입력</option>
+                    <option value="naver.com" selected>naver.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+                
+            </div>
+        </li>
+        <li>
+            <label for="belongInt" class="label">소속<i class="required" aria-required="true">*</i></label>
+            <div class="label-cont">
+                <input type="text" class="form-item" id="belongInt" value="보건복지부">
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+
+<div class="btns">
+    <button type="button" onclick="" class="btn">이전</button>
+    <button type="button" onclick="" class="btn">수정</button>
+    <button type="button" onclick="" class="btn">접수취소</button>
+</div>
