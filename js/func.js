@@ -7,9 +7,9 @@ const AC = 'active',
     CloseTxt = '닫기',
     $html = $('html');
 
-/*  mobile ------------------------------------------------------------------------------ */
-function mobile() {
-    return window.innerWidth < 1024 ? 1 : 0 //ipad pro는 넓어서 web화면이 나오게
+/* Mobile detection -------------------------------------------------------------------- */
+function isMobile() {
+    return window.innerWidth < 1024; //ipad pro(1024)는 web화면
 }
 /*  initial setup of accessibility ------------------------------------------------------- */
 function accessInit(el) {
@@ -258,7 +258,7 @@ function tabs(el, cont) {
 
         //탭메뉴(모바일)
         $(el).find('li>a, li>button').on("click", function(e) {
-            if (mobile() && $(this).parent().hasClass(AC)) {
+            if (isMobile() && $(this).parent().hasClass(AC)) {
                 e.preventDefault()
                 $(this).parents(el).toggleClass(AC)
             }
@@ -371,7 +371,7 @@ $(function(){
     $('.page-info .current b').prepend('<span class="sr-only">전체 페이지 수</span>');
 
     //모바일에서 원본이미지보기
-    if(mobile()){
+    if(isMobile()){
         $('.img-zoom, .zoom_posi, .img').each(function(){
             const imgSrc = $(this).find('img').attr('src')
             $(this).append('<a href="' + imgSrc + '" target="_blank" title="이미지 새창열기" class="btn-zoom"></a>')
