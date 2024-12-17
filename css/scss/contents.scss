@@ -178,7 +178,7 @@ $contents : $url + "/contents";
 04. 교육신청
 ======================================================================================= */
 .festival-invite {
-    .title { border-bottom: 1px solid var(--border); padding : 0 6rem 2.8rem 0; margin-bottom: 2rem; position: relative; display: inline-block;        
+    .title { border-bottom: 1px solid var(--border); padding : 0 6rem 2.8rem 0; margin-bottom: 2rem; position: relative; display: flow-root;        
         strong { font-size: 2.8rem;           
             span { color: var(--primary-70); }
         }
