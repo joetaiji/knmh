@@ -26,7 +26,7 @@ $(function () {
 				el: paging,
 				clickable: true,
 				renderBullet: function (index, className) {
-					return '<span class="' + className + '" role="button"> 상단 메인배너 ' + (index + 1) + "번 슬라이드로 이동</span>";
+					return `<span class="${className}" role="button"> 상단 메인배너 ${index + 1}번 슬라이드로 이동</span>`;
 				}
 			}
 		}),
@@ -63,8 +63,8 @@ $(function () {
 				el: paging,
 				clickable: true,
 				renderBullet: function (index, className) {
-					return '<span class="' + className + '" role="button"> 하단 사이트 롤링배너 ' + (index + 1) + "번 슬라이드로 이동</span>";
-				}
+                    return `<span class="${className}" role="button"> 하단 사이트 롤링배너 ${index + 1}번 슬라이드로 이동</span>`;
+                }
 			},
 			breakpoints: {
 				1024: {
